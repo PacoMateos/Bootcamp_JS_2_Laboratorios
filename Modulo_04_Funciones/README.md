@@ -138,7 +138,7 @@ if (el !== null && el !== undefined ){
 
 1. Adecuación de la UI, ampliando el archivo index.html y style.css. El resultado de dicha implementación es el siguiente:
 
-imagen
+![turnosApp](https://github.com/PacoMateos/Bootcamp_JS_2_Laboratorios/blob/main/Modulo_04_Funciones/src/assets/turnos.png)
 
 2. Para la funcionalidad de la parte básica, empezamos creando las sigientes funciones:
 
