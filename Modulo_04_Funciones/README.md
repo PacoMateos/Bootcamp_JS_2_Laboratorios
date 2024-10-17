@@ -54,7 +54,7 @@ Un ejemplo de marcador de turnos:
 
 ```
 
-Y el estilo
+Y el estilo,
 
 *./src/style.css*
 

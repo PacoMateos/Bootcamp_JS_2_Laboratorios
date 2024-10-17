@@ -5,8 +5,8 @@
 ### 🟢 Laboratorio Módulo 2 - Tipos de datos y Operadores 
 ### 🟢 Laboratorio Módulo 3 - Variables 
 ### 🟢 Laboratorio Módulo 4 - Funciones
-### 🟡 Laboratorio Módulo 5 - Condicionales
-### 🔴 Laboratorio Módulo 6 - Imports				
+### 🟢 Laboratorio Módulo 5 - Condicionales
+### 🟡 Laboratorio Módulo 6 - Imports				
 ### 🔴 Laboratorio Módulo 7 - Testing				
 ### 🔴 Laboratorio Módulo 8.1 - Bucles				
 ### 🔴 Laboratorio Módulo 8.2 - Array Methods				
