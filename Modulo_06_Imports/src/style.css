@@ -127,6 +127,8 @@ button:disabled,
 button[disabled]{
   background-color: #022c22;
   color: #047857;
+  cursor: not-allowed;
+
 }
 
 /* Clase para que hubiera pasado*/

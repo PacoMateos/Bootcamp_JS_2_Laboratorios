@@ -37,6 +37,10 @@ En esta práctica vamos a refactorizar el código del Laboratorio_05 para que se
 
 ### RESOLUCION (APARTADO OBLIGATORIO)
 
+0. Aspecto de la aplicación.
+
+![imagenApp](https://github.com/PacoMateos/Laboratorio_Git/blob/master/assets/images/sieteymedia.png)
+
 1. Modelo.
 
 - He pasado la variables que contienen los datos a un nuevo archivo que hemos denominado modelo.ts
@@ -48,19 +52,15 @@ En esta práctica vamos a refactorizar el código del Laboratorio_05 para que se
 ```typescript
 
 interface Partida {
-  currentNumber: number,
   currentScore: number,
-  msg: string,
-  extraCard: number,
+  extraCardCounter: number
   extraScore: number,
   puntuacionVirtual: number
 }
 
 export const partida: Partida = {
-  currentNumber: 0,
   currentScore: 0,
-  msg: "",
-  extraCard: 0,
+  extraCardCounter: 0,
   extraScore: 0,
   puntuacionVirtual: 0
 }
@@ -77,16 +77,47 @@ export const partida: Partida = {
 
 ```typescript
 
-const newCard = () => {
-	newCardLogic(); // motor
-	newCardUI(); // UI
+export const resetAll = () => {
+  
+	// partida.currentScore = 0;
+	// partida.extraCardCounter = 0;
+	// partida.extraScore = 0;
+	// partida.puntuacionVirtual = 0;
+	
+	showScore(partida.currentScore);
+	showMessage();
+	removeCards(); 
+	buttonsVisibilityStart();
 }
 
-const resetAll = () => {
-	resetAllLogic(); // motor
-	resetAllUI(); // UI
-}
 ```
+- Creamos una nueva función y la ponemos en motor.
+
+```typescript
+
+export const resetAllData = () => {
+	partida.currentScore = 0;
+	partida.extraCardCounter = 0;
+	partida.extraScore = 0;
+	partida.puntuacionVirtual = 0;
+}
+
+```
+
+- Y en UI queda:
+```typescript
+
+export const resetAll = () => {
+  resetAllData();
+	showScore(partida.currentScore);
+	showMessage();
+	removeCards(); 
+	buttonsVisibilityStart();
+}
+
+```
+
+
 - Una vez resuelto el problema de funciones con varias responsabilidades, se ha pasado a motor.ts lo relacionado con la lógica de la aplicación.
 - Despues se han exportado esas funciones.
 - Se ha importando todo desde main.ts
@@ -108,5 +139,4 @@ const resetAll = () => {
 - Ha sido un ejecicio muy util para comprobar lo bien o mal que destribuimos el código aunque funcionen.
 - A pesar de que me han surgido problemas, éstos han podido ser resuelto con cierta facilidad debido a la organización nueva.
 
-### DUDAS
-- No siempre ha sido fácil diferenciar que es qué. Modelo / Motor / UI. ¿Es es lo que se conoce como modelo/vista/controlador?
+
