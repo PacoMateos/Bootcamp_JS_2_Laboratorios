@@ -8,8 +8,8 @@
 ### 🟢 Laboratorio Módulo 5 - Condicionales
 ### 🟢 Laboratorio Módulo 6 - Imports				
 ### 🟢 Laboratorio Módulo 7 - Testing				
-### 🟡 Laboratorio Módulo 8.1 - Bucles				
-### 🔴 Laboratorio Módulo 8.2 - Array Methods				
+### 🟢 Laboratorio Módulo 8.1 - Bucles				
+### 🟡 Laboratorio Módulo 8.2 - Array Methods				
 ### 🔴 Laboratorio Módulo 8.3 - Aplicación Memoria				
 ### 🔴 Laboratorio Módulo 9 - 9.1 Ticket de compra				
 ### 🔴 Laboratorio Módulo 9 - 9.2 Clave fuerte				
